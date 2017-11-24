@@ -6,6 +6,7 @@
 - Handle invalid quality values that look like numbers.
 - Remove Browser::Bot.detect_empty_ua! in favor of Browser::Bot.allow_empty_ua!
 - Detect unknown platform/device as bots.
+- `browser.modern?` and `Browser.modern_rules` were removed; create a class that wraps the logic you want (e.g. a Rails helper method instantiates a class and passes the browser object to it.
 
 ## v2.5.2
 
